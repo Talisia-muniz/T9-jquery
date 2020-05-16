@@ -22,4 +22,14 @@ const frases = [
     "Não importa o tamanho da montanha, ela não pode tapar o sol.",
     "O bom-senso vai mais longe do que muito conhecimento.",
 ]
+"O bom-senso vai mais longe do que muito conhecimento.",
 
+
+
+//jQuery
+
+$('.biscoito').click(function() {
+  let indexDaFrase = Math.floor(Math.random() * frases.length)
+
+  $('#message').text(frases[indexDaFrase])
+})
